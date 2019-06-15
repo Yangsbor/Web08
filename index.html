@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8/">
+	<title>杨宏博的Web08</title>
+	<style>
+		body{
+				overflow-x: hidden;
+			}
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		a:link{
+			text-decoration: none;
+			color: black;
+		}
+		.header1{
+			height: 188px;
+			width: 100%;
+			position: relative;
+		}
+		.inp4{
+			position: absolute;
+			top: 80px;
+			left: 1020px;
+		}
+		.img1{
+			position: absolute;
+			left: 270px;
+			top: 61px;
+		}
+		.img2{
+			position: absolute;
+			right:-36px;
+			top:3px;
+		}
+		.img3{
+			position: absolute;
+			right: -65px;
+			top: 3px;
+		}
+		.p1{
+			position: absolute;
+			left: 718px;
+			top: 8px;
+			font-size: 12.93px;
+		}
+		.p2{
+			line-height: center;
+		}
+		.a1{
+			font-size:14.78px;
+		}
+		.inp1{
+			height: 46px;
+			width: 440px;
+			text-align:center;
+			position:absolute;
+			top:74px;
+			left:630px;
+			border:1px black solid;
+			color:#dfdfdf;
+			font-size: 14.78px;			
+		}
+		.img8{
+			position: absolute;
+			right: 460px;
+			top:80px;
+		}
+		.img9{
+			position: absolute;
+			top:90px;
+			right:295px;
+		}
+		.ul1{
+			position:absolute;
+			top: 145px;
+			left: 402px;
+		}
+		.ul1 li{
+			display: inline-block;
+			height:40px;
+			width:86px;
+			line-height:40px; 
+			font-size: 14.78px;
+			text-align: center;
+		}
+		.ul1 li:hover{
+			color:#3aa747 ;
+			border-bottom: 3px #3aa747 solid;
+		}
+		.span1{
+			font-size: 14.78px;
+			position: absolute;
+			top: 155px;
+			left: 290px;
+			font-weight: bolder;
+		}
+		.header2{
+			height: 4px;
+			width: 100%;
+			background-color: #3aa747;
+		}
+		.banner{
+			width: 100%;
+		}
+		.main{
+			height: 967px;
+			width: 100%;
+			position: relative;
+		}
+		.ul2{
+			margin: 0 auto;
+			border-top:none;
+			border-bottom:1px black solid;
+			border-left:1px black solid;
+			border-right: 1px black solid;
+			height: 45px;
+			width: 950px;
+		}
+		.ul3{
+			margin: auto;
+			border: 1px black solid;
+			height: 45px;
+			width: 950px;
+			margin-top: 35px;
+			border-bottom:1px black solid;
+		}
+		.ul2 li{
+			display: inline-block;
+			height: 45px;
+			width: 91px;
+			line-height: 45px;
+			text-align: center;
+		}
+		.ul3 li{
+			display: inline-block;
+			height: 45px;
+			width: 91px;
+			line-height: 45px;
+			text-align: center;
+		}
+		.ul2 a:hover{
+			color: #3aa747;
+		}
+		.ul3 a:hover{
+			color: #3aa747;
+		}
+		.li1{
+			background-color: #e5e5e5;
+			color: black;
+		}
+		.li2{
+			color: #737373;
+		}
+		.li2:hover{
+			color: #3aa747;
+		}
+		.p3{
+			margin-top: 12px;
+		}
+		.span10{
+			font-size: 18px;
+			margin-left: 310px;
+		}
+		.span11{
+			font-size: 14px;
+			margin-left:3px;
+			color: #8d8d8d;
+		}
+		.span12{
+			font-size: 14px;
+			margin-left:720px;
+			color: #8d8d8d;
+		}
+		.main2{
+			position: absolute;
+			top:231px;
+			left: 266px;
+			width:966px;
+
+		}
+		.o1{
+			width: 209px;
+			height: 234px;
+			position: relative;
+		}
+		.o2{
+			background-color: rgba(76,76,76,0.9);
+			height:50px;
+			width: 209px;
+			position: absolute;
+			bottom: 0px;
+			left: 0px;
+		}
+		.o1:hover .o2{
+			background-color:rgba(76,76,76,0.9);
+			height:234px;
+			width: 209px;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+		}
+		.o1:hover .p21{
+			text-align: center;
+			color: #fff;
+			font-size: 14.83px;
+			margin-top:90px;
+			height:17px;
+			line-height:17px;
+		}
+		.o1:hover .p22{
+			text-align: center;
+			color: #fff;
+			font-size: 14.83px;
+			margin-top:15px;
+			height:17px;
+			line-height:17px;
+		}
+		.main2>ul>li{
+			width: 209px;
+			height: 234px;
+			border: 1px black solid;
+			float: left;
+			list-style-type: none;
+			margin-left: 30px;
+			margin-top: 38px;
+		}
+		.footer1{
+			height: 102px;
+			width:100%;
+			background-color: #f5f5f5;
+			position: relative;
+		}
+		.img4{;
+			margin-top:4px;
+			margin-left:14px;
+		}
+		.span2{
+			position: absolute;
+			left: 75px;
+			top: 7px;
+			font-size: 19px;
+		}
+		.span3{
+			position: absolute;
+			top:34px;
+			left:75px;
+			color: #000;
+			font-size:13px;
+		}
+		.img5{
+			margin-top: 4px;
+			margin-left:30px;
+		}
+		.span4{
+			position: absolute;
+			top: 7px;
+			left:354px;
+			color:black;
+			font-size: 19px;
+		}
+		.span5{
+			position: absolute;
+			top:34px;
+			left:354px;
+			color: #000;
+			font-size:13px;
+		}
+		.img6{
+			position: absolute;
+			left:555px;
+			top:4px;
+		}
+		.span6{
+			position:absolute;
+			top: 7px;
+			left:614px;
+			color:black;
+			font-size: 19px;
+		}
+		.span7{
+			position: absolute;
+			top:34px;
+			left:614px;
+			color: #000;
+			font-size:13px;
+		}
+		.img7{
+			position: absolute;
+			left:779px;
+			top:7px;
+		}
+		.span8{
+			position:absolute;
+			top: 7px;
+			left:830px;
+			color:black;
+			font-size: 19px;
+		}
+		.span9{
+			position: absolute;
+			top:34px;
+			left:830px;
+			color: #000;
+			font-size:13px;
+		}
+		.footer2{
+			height: 100px;
+			width: 100%;
+			background-color: #323232;
+			position:relative;
+		}
+		.p7{
+			position: absolute;
+			top: 29px;
+			left: 400px;
+			font-size: 14px;
+			color: #fff;
+		}
+		.p8{
+			position:absolute;
+			font-size: 14px;
+			color:#fff;
+			top: 68px;
+			left:600px;
+		}
+		.img11{
+			width:100%;
+			height:100%;
+		}
+		.img12{
+			width: 100%;
+			height: auto;
+			margin-top:10px;
+		}
+		.p21{
+			text-align: center;
+			color: #fff;
+			font-size: 14.83px;
+			height:25px;
+			line-height: 25px;
+		}
+		.p22{
+			text-align: center;
+			color: #fff;
+			font-size: 14.83px;
+			height:25px;
+			line-height: 25px;
+		}
+		.p7 a:link{
+			color: white;
+		}
+		.pp{
+			margin-top:10px;
+			margin-right:130px;
+		}
+		.guding{
+			position: fixed;
+			top:191px;
+			right: 0px;
+			background-color: black;
+			border: 5px black solid;
+		}
+		.guding img{
+			margin-top: 30px;
+			margin-left:15px;
+		}
+		.lili1{
+			width: 67px;
+			height:94px;
+			list-style-type: none;
+			border-bottom: 2px #606260 solid;
+		}
+		.lili2{
+			width: 67px;
+			height:94px;
+			list-style-type: none;
+			border-bottom: 0px #606260 solid;
+		}
+		.footer1 ul{
+			position: absolute;
+			top:26px;
+			left:250px;
+			width: 980px;
+		}
+		.lili3{
+			display: inline-block;
+			width: 264px;
+			height:52px;
+			border-right: 1px #e0e0e0 solid;
+			list-style-type: none;
+		}
+		.lili4{
+			position: absolute;
+			top:26px;
+			left: 790px;
+			width: 214px;
+			height:52px;
+			border-right: 1px #e0e0e0 solid;
+			list-style-type: none;
+		}
+	</style>
+</head>
+<body>
+	<form>
+	<div class="header1">
+		<p class="p1">嘿，欢迎来买猜商城！&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="a1"><a href="#">请登录</a>&nbsp&nbsp&nbsp<a href="#">免费注册</a></span>&nbsp&nbsp&nbsp<span><a href="#">我的订单</a>&nbsp&nbsp<a href="#">▼</a><a href="#">&nbsp我的买猜</a>&nbsp&nbsp<a href="#">▼</a><a href="#">&nbsp&nbsp帮助中心</a></span>&nbsp&nbsp
+			<a href="#"><img class="img2" src="wb.png"/></a>
+			<a href="#"><img class="img3" src="wx.png"/></a></p>
+		<img  class="img1" src="logo.png"><input  class="inp1" type="text" value="请输入搜索内容"/>
+		<input  class="inp4" type="image" src="search.png">
+		<a href="#"><img  class="img9" src="cart.png"/></a>
+		<ul class="ul1">
+			<li><a href="#">首页</a></li>
+			<li><a href="#">名酒</a></li>
+			<li><a href="#">茗茶</a></li>
+			<li><a href="#">玉石</a></li>
+			<li><a href="#">休闲食品</a></li>
+			<li><a href="#">洗护用品</a></li>
+			<li><a href="#">土特产</a></li>
+			<li><a href="#">积分商城</a></li>
+			<li><a href="#">抽奖游戏</a></li>
+		</ul>
+		<span class="span1"><a href="#">全部商品分类</a>&nbsp<a href="#">▼</a></span>
+	</div>
+	<div class="header2">
+	</div>
+	<div class="banner">
+		<img src="banner.png" width="100%">
+	</div>
+	<div class="main">
+		<p class="p3">
+			<span class="span10">首页</span>
+			&nbsp&nbsp>&nbsp<span class="span11">玉石</span><span class="span12">共200件相关商品</span>
+		</p>
+		<ul class="ul3">
+			<li class="li1">玉石</li>
+			<li><a href="#"><span class="li2">白玉</span></a></li>
+			<li><a href="#"><span class="li2">碧玉</span></a></li>
+			<li><a href="#"><span class="li2">黄玉</span></a></li>
+			<li><a href="#"><span class="li2">和田玉</span></a></li>
+			<li><a href="#"><span class="li2">翡翠</span></a></li>
+			<li><a href="#"><span class="li2">绿松玉</span></a></li>
+			<li><a href="#"><span class="li2">墨玉</span></a></li>
+		</ul>
+		<ul class="ul2">
+			<li class="li1">其他</li>
+			<li><a href="#"><span class="li2">吊坠</span></a></li>
+			<li><a href="#"><span class="li2">扳指</span></a></li>
+			<li><a href="#"><span class="li2">手镯</span></a></li>
+		</ul>		
+		<ul class="ul2">
+			<li class="li1">地区</li>
+			<li><a href="#"><span class="li2">北京</span></a></li>
+			<li><a href="#"><span class="li2">安徽</span></a></li>
+			<li><a href="#"><span class="li2">福建</span></a></li>
+			<li><a href="#"><span class="li2">内蒙古</span></a></li>
+			<li><a href="#"><span class="li2">宁夏</span></a></li>
+			<li ><a href="#"><span class="li2">黑龙江</span></a></li>
+			<li><a href="#"><span class="li2">河北</span></li>
+				<span class="pp"><a href="#"><span class="li2">更多</span></a></span>
+		</ul>
+		<div class="main2">
+			<ul>
+				<li><div class="o1"><img class="img11" src="img1.png"><div class="o2"><p class="p21">竞猜价：¥ 399.00</p>
+					<p class="p22">翡翠千手观音吊坠</p></div></div></li>
+				<li><div class="o1"><img class="img12" src="img2.png"><div class="o2"><p class="p21">竞猜价：¥ 1980.00</p>
+					<p class="p22">翡翠龙凤吊坠</p></div></div></li>
+				<li><div class="o1"><img class="img12" src="img3.png"><div class="o2"><p class="p21">竞猜价：¥ 199.00</p>
+					<p class="p22">翡翠花蕊吊坠</p></div></div></li>
+				<li><div class="o1"><img class="img12" src="img4.png"><div class="o2"><p class="p21">竞猜价：¥ 199.00</p>
+					<p class="p22">翡翠如意吊坠</p></div></div></li>
+				<li><div class="o1"><img class="img12" src="img5.png"><div class="o2"><p class="p21">竞猜价：¥ 99.00</p>
+					<p class="p22">翡翠婵吊坠</p></div></div></li>
+				<li><div class="o1"><img class="img12" src="img6.png"><div class="o2"><p class="p21">竞猜价：¥ 99.00</p>
+					<p class="p22">翡翠观音(浅色)吊坠</p></div></div></li>
+				<li><div class="o1"><img class="img12" src="img7.png"><div class="o2"><p class="p21">竞猜价：¥ 199.00</p>
+					<p class="p22">翡翠平安扣(深色)吊坠</p></div></div></li>
+				<li><div class="o1"><img class="img12" src="img8.png"><div class="o2"><p class="p21">竞猜价：¥ 199.00</p>
+					<p class="p22">翡翠如意吊坠</p></div></div></li>
+			</ul>
+		</div>			
+	</div>
+	<div class="footer1">
+		<ul>
+			<li class="lili3"><img class="img4" src="f1.png"><span class="span2"><a href="#">资质认证</a></span>
+			<span class="span3">服务商100%实名认证</span></li>
+			<li class="lili3">
+			<img class="img5" src="f2.png">
+			<span class="span4"><a href="#">支付安全</a></span><br/>
+			<span class="span5">明码标价支付及信息安全</span>
+			</li>
+			<li class="lili1">
+			<img class="img6" src="f3.png">
+			<span class="span6"><a href="#">保险赔付</a></span><br/>
+			<span class="span7">为您提供担保赔付</span>
+			</li>
+			<li class="lili3">
+			<img class="img7" src="f4.png">
+			<span class="span8"><a href="#">售后无忧</a></span><br/>
+			<span class="span9">服务出问题经理全程跟进</span>
+			</li>
+		</ul>
+		<div class="lili4">
+		</div>
+	</div>
+	<div class="footer2">
+		<p class="p7"><a href="#">首页</a>&nbsp&nbsp|&nbsp&nbsp<a href="#">工商代理</a>&nbsp&nbsp|&nbsp&nbsp<a href="#">财务代记账</a>&nbsp&nbsp|&nbsp&nbsp<a href="#">股权交易与变更</a>&nbsp&nbsp|&nbsp&nbsp<a href="#">企业贷款</a>&nbsp&nbsp|&nbsp&nbsp<a href="#">办公室租赁</a>&nbsp&nbsp|&nbsp&nbsp<a href="#">社保公积金代理</a>&nbsp&nbsp|&nbsp&nbsp<a href="#">法律服务</a></p>
+		<p class="p8">©&nbsp&nbsp2017-2018&nbsp&nbsp买猜商城有限公司&nbsp&nbsp版权所有</p>
+	</div>
+	<div class="guding">
+		<ul>
+			<li class="lili1"><a href="#"><img  src="cart1.png"></a></li>
+			<li class="lili1"><a href="#"><img src="qq.png"></a></li>
+			<li class="lili1"><a href="#"><img src="zuji.png"></a></li>
+			<li class="lili1"><a href="#"><img src="erweima.png"></a></li>
+			<li class="lili2"><a href="#"><img src="gotop.png"></a></li>
+	</div>
+	</form>
+</body>
+</html>
